@@ -9,7 +9,8 @@ async function newRates(newCurrency) {
   if (jsonCurrency === false) {
     $("#result").text("Sorry, this currency isn't available");
   } else {
-    $("#result").text(`You have ${jsonCurrency.conversion_rates.RUB}`);
+    let amount = $("#amount").val();
+    $("#result").text(`You have ${jsonCurrency.conversion_rates.RUB * amount}`);
   }
 }
 
