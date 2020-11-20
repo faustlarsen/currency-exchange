@@ -7,9 +7,14 @@
 </head>
 <body>
   <h1>Currency Exchange</h1>
-  <select name="currency" id="currency">
-    <option value="RUB">Rubble</option>
-  </select>
-  
+  <div class="form-group">
+    <input id="ampunt" type="text">
+    <label for="currency" id="currency">Dollars exchange to</label>
+    <select name="currency" id="currency">
+      <option value="RUB">Russian Ruble</option>
+    </select>
+  </div>
+  <button class="btn btn-dark" id="submit">Exchange</button>
+  <div id="result"></div>
 </body>
 </html>

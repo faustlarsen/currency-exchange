@@ -11,21 +11,21 @@ This web app will determine the most recent exchange rate by makeing an API call
 
 ### SPECS: ###
 
-1. SPEC: Should return
+1. SPEC: Should return users input in USD 
+
+**Input**: 10
+
+**Output**: 10
+____________________________________________________________________________________
+
+2. SPEC: Should convert users input into foreing currency
 
 **Input**: 
 
 **Output**: 
 ____________________________________________________________________________________
 
-2. SPEC: Should return 
-
-**Input**: 
-
-**Output**: 
-____________________________________________________________________________________
-
-3. SPEC: Should return 
+3. SPEC: Should offer 5 types of currencies
 
 **Input**: 
 
