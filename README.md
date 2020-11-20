@@ -39,19 +39,30 @@ ________________________________________________________________________________
 **Output**: 762.475
 ___________________________________________________________________________
 
-
 -  _Open Terminal_
 
--  `$ cd ~`
+-  `$ cd ~` - it will navigate to the user's home directory
 
--  `$ cd desktop`
+-  `$ cd desktop`- it will navigate to the desktop
 
--  `$ git clone` copy/paste [this repo](https://github.com/faustlarsen/currency-exchange)
+-  `$ git clone` copy/paste [this repo](https://github.com/faustlarsen/currency-exchange) - it will create the file on desktop
 
--  `$ cd space`
+-  `$ cd currency-exchange` - it will enter the folder
 
--  `$ open index.html`
- 
+-  `$ code .` - it will launch VSCode to open the file
+
+-  Go to `[this site](https://www.exchangerate-api.com/)` and sign up to obtain an API KEY. Then copy it.
+
+-  `$ .env`  it will create .env file. 
+
+-  go to .env and type  API_KEY=(paste your API code here) delete the parentheses
+
+ -  `$ npm install` - it will install a necesarry webpack to run this app
+
+ -  `$ npm run built` - it will complie all the files together
+
+ -  `$ npm start` - it will open an app in the browser
+
 ## Known Bugs
 
 ## Support and contact details
