@@ -7,9 +7,9 @@ import { exchange } from './exchange.js';
 async function newRates(newCurrency) {
   let jsonCurrency = await exchange(newCurrency);
   if (jsonCurrency === false) {
-    $("#result").text("Sorry, this currency isn't available")
+    $("#result").text("Sorry, this currency isn't available");
   } else {
-    $("#result").text(`You have ${jsonCurrency}`)
+    $("#result").text(`You have ${jsonCurrency.conversion_rates.RUB}`);
   }
 }
 

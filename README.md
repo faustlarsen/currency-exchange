@@ -1,6 +1,6 @@
 # Currency Exchanger
 
-#### _A web app that exchange dollars to the foreign currencies. 11/13/2020_
+#### _A web app that exchanges dollars to the foreign currencies. 11/13/2020_
 
 #### By _**Constantine Yakubovski**_ 
 
@@ -20,9 +20,9 @@ ________________________________________________________________________________
 
 2. SPEC: Should convert users input into foreing currency
 
-**Input**: 10 USD into RUB
+**Input**: 1 USD into RUB
 
-**Output**: 
+**Output**: 76.2475
 ____________________________________________________________________________________
 
 3. SPEC: Should offer 5 types of currencies
