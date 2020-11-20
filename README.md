@@ -20,16 +20,16 @@ ________________________________________________________________________________
 
 2. SPEC: Should convert users input into foreing currency
 
-**Input**: 
+**Input**: 10 USD into RUB
 
 **Output**: 
 ____________________________________________________________________________________
 
 3. SPEC: Should offer 5 types of currencies
 
-**Input**: 
+**Input**: RUB , RDI , JPY , MXN, BRL
 
-**Output**: 
+**Output**: RUB , RDI , JPY , MXN, BRL
 ___________________________________________________________________________
 
 -  _Open Terminal_

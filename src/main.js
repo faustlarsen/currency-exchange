@@ -18,6 +18,6 @@ $(document).ready(function() {
   $("#submit").click(function() {
     event.preventDefault();
     let newCurrency = $("#currency").val();
-    newRates(newCurrency)
+    newRates(newCurrency);
   });
 });
