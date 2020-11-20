@@ -10,7 +10,7 @@
     "test": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "constantine",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
