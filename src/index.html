@@ -11,7 +11,7 @@
     <h1>Currency Exchange</h1>
     <div class="form-group">
       <input id="amount" type="text">
-      <label for="currency">Dollars exchange to</label>
+      <label for="currency">Exchange to</label>
       <select name="currency" id="currency">
         <option value='RUB'>Russian Ruble</option>
         <option value="IDR">Indonesian Rupiah</option>
@@ -19,9 +19,21 @@
         <option value="MXN">Mexican Peso</option>
         <option value="BRL">Brazilian Real</option>
       </select>
+      <br>
+      <br>
+      <label for="currency2">Exchange from</label>
+      <select name="currency2" id="currency2">
+        <option value='RUB'>Russian Ruble</option>
+        <option value="IDR">Indonesian Rupiah</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="MXN">Mexican Peso</option>
+        <option value="BRL">Brazilian Real</option>
+      </select>
     <button class="btn btn-dark" id="submit">Exchange</button>
+    <div id="error"></div>
     <div id="rates"></div>
     <div id="result"></div>
+    <div id="base"></div>
   </div>
   </div>
 </div>

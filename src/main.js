@@ -3,16 +3,15 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { exchange } from './exchange.js';
-async function newRates(newAmount, amount) {
-  let jsonCurrency = await exchange(newAmount);
+async function newRates(newAmount) {
+  let jsonCurrency = await exchange();
   if (jsonCurrency === false) {
-    $("#result").text("Sorry, this currency doesn't exist");
-  } else if (amount < 0) {
-    $("#result").text("Please enter amount");
+    $("#error").text(`<p>Sorry, this currency doesn't exist</p>${jsonCurrency.result}`);
   } else {
     let amount = $("#amount").val();
     $("#rates").text(`Your rate per 1 unit is  ${jsonCurrency.conversion_rates[newAmount]}`);
     $("#result").text(`Your total amout is ${jsonCurrency.conversion_rates[newAmount] * amount}`);
+    $("#base").text(`Converting from ${jsonCurrency.base_code}`);
   }
 }
 $(document).ready(function() {
