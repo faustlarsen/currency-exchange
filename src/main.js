@@ -3,23 +3,20 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { exchange } from './exchange.js';
-
-async function newRates(newCurrency) {
-  let jsonCurrency = await exchange(newCurrency);
+async function newRates(newAmount) {
+  let jsonCurrency = await exchange(newAmount);
   if (jsonCurrency === false) {
-    $("#result").text("Sorry, this currency isn't available");
+    $("#result").text("Sorry, this currency doesn't exist");
   } else {
     let amount = $("#amount").val();
-    $("#result").text(`Your total amout is ${jsonCurrency.conversion_rates[newCurrency] * amount}`);
-    $("#rates").text(`Your rate per 1 unit is  ${jsonCurrency.conversion_rates[newCurrency]}`);
+    $("#rates").text(`Your rate per 1 unit is  ${jsonCurrency.conversion_rates[newAmount]}`);
+    $("#result").text(`Your total amout is ${jsonCurrency.conversion_rates[newAmount] * amount}`);
   }
 }
-
-
 $(document).ready(function() {
   $("#submit").click(function() {
     event.preventDefault();
-    let newCurrency = $("#currency").val();
-    newRates(newCurrency);
+    let newAmount = $("#currency").val();
+    newRates(newAmount);
   });
 });
