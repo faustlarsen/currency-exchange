@@ -10,7 +10,8 @@ async function newRates(newCurrency) {
     $("#result").text("Sorry, this currency isn't available");
   } else {
     let amount = $("#amount").val();
-    $("#result").text(`You have ${jsonCurrency.conversion_rates.RUB * amount}`);
+    $("#result").text(`Your total amout is ${jsonCurrency.conversion_rates[newCurrency] * amount}`);
+    $("#rates").text(`Your rate per 1 unit is  ${jsonCurrency.conversion_rates[newCurrency]}`);
   }
 }
 
