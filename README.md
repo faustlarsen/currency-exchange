@@ -6,7 +6,7 @@
 
 ## Description 
 
-This web app will determine the most recent exchange rate by makeing an API call to the following exchange [Rate API](https://www.exchangerate-api.com/)
+This web app will determine the most recent exchange rate by makeing an API call to the following [Exchange Rate API](https://www.exchangerate-api.com/)
 
 
 ### SPECS: ###
@@ -32,7 +32,7 @@ ________________________________________________________________________________
 **Output**: RUB , RDI , JPY , MXN, BRL
 ____________________________________________________________________________________
 
-4. SPEC: Should ofconvert 10 USD to RUB
+4. SPEC: Should convert 10 USD to RUB
 
 **Input**: 10
 
@@ -45,7 +45,7 @@ ___________________________________________________________________________
 
 -  `$ cd desktop`- it will navigate to the desktop
 
--  `$ git clone` copy/paste [this repo](https://github.com/faustlarsen/currency-exchange) - it will create the file on desktop
+-  `$ git clone` ,then copy/paste https://github.com/faustlarsen/currency-exchange  , then press enter - it will create the file on the desktop
 
 -  `$ cd currency-exchange` - it will enter the folder
 
@@ -55,7 +55,7 @@ ___________________________________________________________________________
 
 -  `$ .env`  it will create .env file. 
 
--  go to .env and type  API_KEY=(paste your API code here) delete the parentheses
+-  go to .env and type API_KEY=(paste your API KEY here) without the parentheses
 
  -  `$ npm install` - it will install a necesarry webpack to run this app
 
