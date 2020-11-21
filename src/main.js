@@ -8,7 +8,10 @@ async function newRates(amount, newCurrency, newCurrency2) {
   if (jsonCurrency === false) {
     $("#error").text(`<p>Sorry, this currency doesn't exist</p>${jsonCurrency.result}`);
   } else {
-    
+    $("#rates").text(`Your rate per 1 unit is  ${jsonCurrency.conversion_rates[newCurrency]}`);
+    $("#result").text(`Your total in USD ${jsonCurrency.conversion_rates[newCurrency] * amount}`);
+    $("#base").text(`Converting from ${jsonCurrency.base_code}`);
+    $("#lastUpdate").text(`Last update ${jsonCurrency.time_last_update_utc}`);
     let conversion = jsonCurrency.conversion_rates[newCurrency] / jsonCurrency.conversion_rates[newCurrency2];
     let currencyExchange = amount * conversion;
     $("#conversion").html(`Convert ${currencyExchange} ${newCurrency} from ${newCurrency2}`);
@@ -28,7 +31,10 @@ $(document).ready(function() {
 });
 
 
-// $("#rates").text(`Your rate per 1 unit is  ${jsonCurrency.conversion_rates[newAmount]}`);
-// $("#result").text(`Your total amout is ${jsonCurrency.conversion_rates[newAmount] * amount}`);
-// $("#base").text(`Converting from ${jsonCurrency.base_code}`);
-// $("#lastUpdate").text(`Last update ${jsonCurrency.time_last_update_utc}`);
+
+
+
+// let conversion = jsonCurrency.conversion_rates[newCurrency] / jsonCurrency.conversion_rates[newCurrency2];
+//     let currencyExchange = amount * conversion;
+//     $("#conversion").html(`${currencyExchange} ${newCurrency} from ${newCurrency2}`);
+//   }
