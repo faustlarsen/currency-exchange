@@ -9,7 +9,7 @@ async function newRates(amount, newCurrency, newCurrency2) {
     $("#error").html(`<p>Sorry, this currency doesn't exist</p>${jsonCurrency.error}`);
   } else {
     let conversion = jsonCurrency.conversion_rates[newCurrency] / jsonCurrency.conversion_rates[newCurrency2];
-    let currencyExchange = amount * conversion;
+    let currencyExchange = (amount * conversion).toFixed(2);
     $("#rates").text(`Your rate for 1 USD is ${jsonCurrency.conversion_rates[newCurrency]}`);
     $("#resultInUsd").text(`Your total in USD is ${jsonCurrency.conversion_rates[newCurrency] * amount}`);
     $("#conversion").html(`TOTAL: Converted ${currencyExchange} ${newCurrency} from ${newCurrency2}`);
