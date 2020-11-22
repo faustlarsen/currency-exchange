@@ -10,9 +10,9 @@ async function newRates(amount, newCurrency, newCurrency2) {
   } else {
     let conversion = jsonCurrency.conversion_rates[newCurrency] / jsonCurrency.conversion_rates[newCurrency2];
     let currencyExchange = amount * conversion;
-    $("#rates").text(`Your rate per 1 unit is ${jsonCurrency.conversion_rates[newCurrency]} in USD`);
-    $("#result").text(`Your total in USD is ${jsonCurrency.conversion_rates[newCurrency] * amount}`);
-    $("#conversion").html(`Converted ${currencyExchange} ${newCurrency} from ${newCurrency2}`);
+    $("#rates").text(`Your rate for 1 USD is ${jsonCurrency.conversion_rates[newCurrency]}`);
+    $("#resultInUsd").text(`Your total in USD is ${jsonCurrency.conversion_rates[newCurrency] * amount}`);
+    $("#conversion").html(`TOTAL: Converted ${currencyExchange} ${newCurrency} from ${newCurrency2}`);
     $("#lastUpdate").html(`Last update was on ${jsonCurrency.time_last_update_utc}`);
   }
 }
