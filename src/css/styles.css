@@ -1,3 +1,11 @@
 .form-control {
   width: 3in;
 }
+
+.btn {
+  width: 3in;
+}
+
+#amount {
+  width: 3in;
+}
