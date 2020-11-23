@@ -12,7 +12,7 @@ async function newRates(amount, newCurrency, newCurrency2) {
     let currencyExchange = (amount * conversion).toFixed(2);
     $("#rates").text(`Your rate for 1 ${jsonCurrency.base_code} is ${jsonCurrency.conversion_rates[newCurrency]} ${newCurrency}`);
     $("#resultInUsd").text(`Your total in ${jsonCurrency.base_code} is ${jsonCurrency.conversion_rates[newCurrency] * amount} ${newCurrency}`);
-    $("#conversion").html(`TOTAL: Converted ${currencyExchange} ${newCurrency} from ${amount} ${newCurrency2}`);
+    $("#conversion").html(`TOTAL: Converted ${amount} ${newCurrency2} to ${currencyExchange} ${newCurrency}`);
     $("#lastUpdate").html(`Last update was on ${jsonCurrency.time_last_update_utc}`);
   }
 }
