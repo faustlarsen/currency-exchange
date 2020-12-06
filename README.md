@@ -51,7 +51,7 @@ ___________________________________________________________________________
 
 -  `$ code .` - it will launch VSCode to open the file
 
--  Go to `[this site](https://www.exchangerate-api.com/)` and sign up to obtain an API KEY. Then copy it.
+- Go to `[this site](https://www.exchangerate-api.com/)` and sign up to obtain an API KEY. Then copy it.
 
 -  `$ .env`  it will create .env file. 
 
