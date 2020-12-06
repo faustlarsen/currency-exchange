@@ -59,7 +59,7 @@ ___________________________________________________________________________
 
  -  `$ npm install` - it will install a necesarry webpack to run this app
 
- -  `$ npm run built` - it will complie all the files together
+ -  `$ npm run build` - it will complie all the files together
 
  -  `$ npm start` - it will open an app in the browser
 
